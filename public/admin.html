@@ -1,1 +1,27 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Admin</title><link rel="stylesheet" href="/css/style.css"></head>
+<body>
+  <h2>Admin (bí mật)</h2>
+  <div>
+    <label>Enter secret git code: <input id="gitSecret" /></label>
+    <button id="revealAdmin">Nhập</button>
+  </div>
 
+  <div id="adminPanel" style="display:none;">
+    <h3>Login Admin (2 mật khẩu yêu cầu)</h3>
+    <input id="pw1" placeholder="pw1"/><input id="pw2" placeholder="pw2"/>
+    <h3>Tạo code nạp</h3>
+    <input id="newCode"/><input id="days" type="number" value="1"/><button id="createCode">Tạo</button>
+    <h3>Điều khiển cổ phiếu</h3>
+    <input id="stockIdAdmin" placeholder="STK1"/><select id="actionStock">
+      <option value="increase">Tăng</option>
+      <option value="decrease">Giảm</option>
+      <option value="bankrupt">Phá sản</option>
+    </select>
+    <button id="doStockAction">Thực hiện</button>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
