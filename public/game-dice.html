@@ -1,1 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chơi Tài Xỉu</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h2>Chơi Tài Xỉu</h2>
+  <div id="balance">Balance: <span id="bal">-</span></div>
 
+  <div class="game-area">
+    <div id="cup" class="cup">
+      <div id="dice-face" class="dice-face"></div>
+      <button id="shakeBtn">Xúc (mở vòng mới)</button>
+      <button id="revealBtn" disabled>Mở chén</button>
+    </div>
+    <div class="bets">
+      <h3>Đặt cược</h3>
+      <select id="betAmount">
+        <option value="20000">20k</option>
+        <option value="50000">50k</option>
+        <option value="100000">100k</option>
+        <option value="200000">200k</option>
+        <option value="500000">500k</option>
+      </select>
+      <button id="betTai">Đặt Tài</button>
+      <button id="betXiu">Đặt Xỉu</button>
+    </div>
+    <div id="roundInfo"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/dice.js"></script>
+</body>
+</html>
