@@ -1,1 +1,26 @@
-
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chơi Cổ phiếu</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h2>Bảng Cổ phiếu</h2>
+  <div id="stocks-table"></div>
+  <div id="buy-area">
+    <h3>Mua cổ phiếu</h3>
+    <label>Stock ID: <input id="stockId"/></label>
+    <label>Số lượng: <input id="stockQty" type="number" value="30"/></label>
+    <button id="buyBtn">Mua</button>
+  </div>
+  <div id="sell-area">
+    <h3>Bán cổ phiếu</h3>
+    <label>Stock ID: <input id="sellStockId"/></label>
+    <label>Số lượng: <input id="sellQty" type="number" value="30"/></label>
+    <button id="sellBtn">Bán</button>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/stocks.js"></script>
+</body>
+</html>
